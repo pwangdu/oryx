@@ -581,7 +581,7 @@
     <spark.version>2.2.1</spark.version>
     <surefire.version>2.20.1</surefire.version>
     <tomcat.version>9.0.2</tomcat.version>
-    <zookeeper.version>3.4.8</zookeeper.version>
+    <zookeeper.version>3.4.10</zookeeper.version>
     <!-- Build flags -->
     <!-- Set to 'none' for Travis -->
     <shadePhase>package</shadePhase>
@@ -638,8 +638,8 @@
               <id>enforce</id>
               <configuration>
                 <rules>
-                  <requireModuleConvergence />
-                  <requirePluginVersions />
+                  <requireModuleConvergence/>
+                  <requirePluginVersions/>
                   <requireMavenVersion>
                     <version>3.2.5</version>
                   </requireMavenVersion>
@@ -887,9 +887,9 @@
                   </relocation>
                 </relocations>
                 <transformers>
-                  <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheNoticeResourceTransformer" />
-                  <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer" />
-                  <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+                  <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheNoticeResourceTransformer"/>
+                  <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>
+                  <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                   <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                     <resource>reference.conf</resource>
                   </transformer>
@@ -1152,7 +1152,7 @@
         <cdh.version>5.13.1</cdh.version>
         <hadoop.version>2.6.0-cdh${cdh.version}</hadoop.version>
         <spark.version>2.2.0.cloudera1</spark.version>
-        <zookeeper.version>3.4.5-cdh${cdh.version}</zookeeper.version>
+        <zookeeper.version>3.4.10</zookeeper.version>
         <kafka.version>0.11.0-kafka-3.0.0</kafka.version>
       </properties>
     </profile>
@@ -1192,7 +1192,7 @@
               </execution>
             </executions>
             <configuration>
-              <keyname>Sean Owen (Cloudera) &lt;sowen@cloudera.com&gt;</keyname>
+              <keyname>Sean Owen (Cloudera) &lt;sowen@cloudera.com></keyname>
             </configuration>
           </plugin>
         </plugins>
